@@ -11,7 +11,6 @@ This project is created for learning purposes. It serves as a basic example of h
 - View repository details such as stars, forks, and issues.
 - View user details including repositories & contributors.
 
-a
 ## Getting Started
 
 ### Prerequisites
@@ -76,13 +75,13 @@ The application will be available at http://localhost:3000.
 
 ### Screen Shots
 
-![Alt Search](./assets/search.png)
-![Alt Search Name](./assets/searchRepo.png)
-![Alt Repos](./assets/repos.png)
-![Alt Contributors List](./assets/contributorShow.png)
-![Alt Search In Repo](./assets/searchRepo.png)
-![Alt Sort Repos by Stars](./assets/sortByStars.png)
-![Alt Sort Repos by Forks](./assets/sortByForks.png)
+![Search](./assets/search.png)
+![Search Name](./assets/searchRepo.png)
+![Repos](./assets/repos.png)
+![Contributors List](./assets/contributorShow.png)
+![Search In Repo](./assets/searchRepo.png)
+![Sort Repos by Stars](./assets/sortByStars.png)
+![Sort Repos by Forks](./assets/sortByForks.png)
  
 ### Built With
 - React - A JavaScript library for building user interfaces.
