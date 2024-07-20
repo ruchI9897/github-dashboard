@@ -1,5 +1,5 @@
 import React, {  useState } from 'react';
-import { CardDiv, NormalText, RepoContainer, RepoInfo, UserAvatar, UserBio, UserName, UserRepos } from '../styling';
+import { CardDiv, NormalText, RepoContainer, RepoInfo, UserAvatar, UserBio, UserName, UserRepos, ShowContributorsButton } from '../styling';
 import { Link } from 'react-router-dom';
 import { fetchData } from '../APIs';
 import { FaCodeFork } from "react-icons/fa6";
@@ -41,15 +41,19 @@ const RepoCard = ({repo}) => {
                 </UserRepos>
             </RepoInfo>
                 
-            <button style={{alignSelf:'end'}} onClick={showContributors}>Show Contributors</button>
+            <ShowContributorsButton onClick={showContributors}>{!showContributorsList ? 'Show' : "Hide"} Contributors</ShowContributorsButton>
+            <div style={{display:'flex', flexWrap:'wrap', justifyContent:'center'}}>
+
             {
                 showContributorsList && repoContributor && repoContributor.map((contributor) => (
-                    <div key={contributor.id} style={{display:'flex'}}>
-                        <UserAvatar src={contributor.avatar_url} alt="avatar" />
-                        <p>{contributor.login}</p>
+                    <div key={contributor.id} style={{display:'flex', alignItems: 'center'}}>
+                        <UserAvatar style={{width:40}} src={contributor.avatar_url} alt="avatar" />
+                        <p style={{color:'white'}}>{contributor.login}</p>
                     </div>
                 ))
             }
+            </div>
+
       </CardDiv>
   );
 };

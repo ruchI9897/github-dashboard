@@ -50,9 +50,10 @@ const UserDashboard = () => {
         return repos.filter((repo) => repo.name.toLowerCase().includes(searchQuery.toLowerCase()));
     };
 
+    console.log(userInfo)
     return (
         <SearchContainer>
-            <h1>{userInfo.name}'s Repositories</h1>
+            <h1 style={{color:'white'}}>{userInfo.name || userInfo.login}'s Repositories</h1>
             <FilterContainer>
                 <select value={sortOption} onChange={handleSortChange}>
                     <option value="name">Sort by Name</option>

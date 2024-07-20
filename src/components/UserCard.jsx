@@ -15,7 +15,7 @@ const UserCard = ({user}) => {
           <CardContainer>
           <UserAvatar src={user.avatar_url} alt="avatar" />
             <UserInfoBox1>
-              <UserName>{user.name}</UserName>
+              <UserName>{user.name || user.login}</UserName>
               <UserBio>{user.bio}</UserBio>
               <UserRepos>
                 <RiGitRepositoryLine style={{marginRight:'5px'}}/>

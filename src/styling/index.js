@@ -6,12 +6,13 @@ export const AppContainer = styled.div`
     display: flex;
     padding-top: 26px;
     padding-bottom: 20px;
+    background-color:#17153B;
+    overflow:scroll
 `
 
 export const SearchContainer = styled.div`
     width: 100%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
     
@@ -22,7 +23,7 @@ export const SearchInput = styled.input`
     height: 40px;
     border-radius: 30px;
     font-size: 14px;
-    padding: 6px;
+    padding: 12px;
 `
 
 export const AllCards = styled.div`
@@ -36,7 +37,7 @@ export const AllCards = styled.div`
 
 export const CardContainer = styled.div`
     textDecoration: none;
-    color:black;
+    color:white;
     width: 100%;
     display: flex;
 
@@ -58,17 +59,17 @@ export const CardDiv = styled.div`
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
-
+    background-color:rgb(200, 172, 214, 0.5)
 `
 
 export const UserName = styled.h3`
     margin:4px;
-    color: green
+    color: #FAFFAF
 `
 
 export const UserBio = styled.h5`
     margin:2px;
-    color:gray  
+    color:white  
 `
 
 export const UserRepos = styled.div`
@@ -123,6 +124,7 @@ export const RepoContainer = styled(CardContainer)`
 
 export const Container = styled.div`
     width: 100%;
+    height:100vh
 `
 
 export const ContentAndIssuesContainer = styled.div`
@@ -143,4 +145,33 @@ export const ChildContainers = styled.div`
 
 export const PText = styled.p`
     margin:0
+`
+
+export const ShowContributorsButton = styled.button`
+  align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.575rem - 1px) calc(.775rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+    align-self: end;
 `

@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+# GitHub Search Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is created for learning purposes. It serves as a basic example of how to interact with the GitHub API using a React application. The implementation is kept simple to help beginners understand the core concepts without being overwhelmed by complexity.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Search for GitHub repositories by name.
+- Search for GitHub users by username.
+- View repository details such as stars, forks, and issues.
+- View user details including repositories & contributors.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+a
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+Make sure you have the following installed on your system:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```sh
+    git clone https://github.com/YOUR-USERNAME/github-search.git
+    cd github-search
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install the dependencies:
 
-### `npm run eject`
+    ```sh
+    npm install
+    # or
+    yarn install
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Configuration
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Create a `.env` file in the root of the project and add your GitHub API token:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```plaintext
+REACT_APP_GITHUB_API_TOKEN=your_github_api_token
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Configuration
 
-## Learn More
+Create a `.env` file in the root of the project and add your GitHub API token:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```plaintext
+REACT_APP_GITHUB_API_TOKEN=your_github_api_token
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+You can generate a GitHub API token [here](https://github.com/settings/tokens).
 
-### Code Splitting
+### Running the Application
+Start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+npm start
 
-### Analyzing the Bundle Size
+ # or
+ 
+yarn start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
 
-### Making a Progressive Web App
+The application will be available at http://localhost:3000.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Usage
+- Enter a repository name or username in the search bar and press enter.
+- Click on a repository or user from the search results to view more details.
 
-### Advanced Configuration
+### Screen Shots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![Alt Search](./assets/search.png)
+![Alt Search Name](./assets/searchRepo.png)
+![Alt Repos](./assets/repos.png)
+![Alt Contributors List](./assets/contributorShow.png)
+![Alt Search In Repo](./assets/searchRepo.png)
+![Alt Sort Repos by Stars](./assets/sortByStars.png)
+![Alt Sort Repos by Forks](./assets/sortByForks.png)
+ 
+### Built With
+- React - A JavaScript library for building user interfaces.
+- TypeScript - A typed superset of JavaScript.
+- GitHub API - The REST API for GitHub.
+ 
+### Extending the Project
 
-### Deployment
+Feel free to extend the functionality of this project and add more features. Some ideas for enhancements include:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **Pagination**: Add support for paginating through search results.
+- **User Profiles**: Enhance the user search functionality to display more detailed user profiles.
+- **Advanced Search**: Implement advanced search options for repositories and users.
+- **Styling**: Improve the UI/UX with better styling and responsive design.
+- **Error Handling**: Add more robust error handling and loading states.
 
-### `npm run build` fails to minify
+### Contributing
+Contributions are welcome! Please fork the repository and create a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Fork the repository.
+- Create a new branch: git checkout -b feature/your-feature-name.
+- Make your changes and commit them: git commit -m 'Add some feature'.
+- Push to the branch: git push origin feature/your-feature-name.
+- Create a pull request.
+
+
+### Acknowledgments
+- GitHub for providing the API.
+- React for the UI library.

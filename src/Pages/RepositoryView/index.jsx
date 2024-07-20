@@ -26,7 +26,7 @@ const RepositoryView = () => {
 
     return (
         <Container>
-            <h1>{userInfo.name}'s Repositories</h1>
+            <h1 style={{color:'white'}}>{userInfo.name || userInfo.login}'s Repositories</h1>
             <div style={{display:'flex', justifyContent:'center'}}>
                 <div style={{width:'29%', display:'flex', flexDirection:'column'}}>
                     {contentsInfo && contentsInfo.length > 0 ? <ChildContainers>
